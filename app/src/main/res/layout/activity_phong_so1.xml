@@ -1,0 +1,219 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF0E6"
+    tools:context=".PhongSo1Activity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/relative_background_profile"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/backBtn1"
+            android:layout_width="51dp"
+            android:layout_height="45dp"
+            android:background="@drawable/back"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/Textview1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:padding="10dp"
+            android:text="@string/room_no1_room"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageViewPSo1"
+        android:layout_width="264dp"
+        android:layout_height="199dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/relative_camera_background"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.265"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.296" />
+
+    <ProgressBar
+        android:id="@+id/progressBarP1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="165dp"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:indeterminate="true" />
+
+    <ViewFlipper
+        android:id="@+id/viewFlipperDoorP1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:background="@drawable/image_button_shape">
+
+            <ImageView
+                android:id="@+id/doorButtonP1"
+                android:layout_width="73dp"
+                android:layout_height="56dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="11dp"
+                android:src="@drawable/doroff" />
+
+            <Switch
+                android:id="@+id/switch_door1"
+                android:layout_width="300dp"
+                android:layout_height="48dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="13dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="310dp"
+                android:layout_marginEnd="25dp"
+                android:layout_toEndOf="@+id/doorButtonP1"
+                android:text="@string/door_room"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ViewFlipper>
+
+
+    <ViewFlipper
+        android:id="@+id/viewFlipperACP1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewFlipperDoorP1"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:background="@drawable/image_button_shape">
+
+            <ImageView
+                android:id="@+id/acButtonP1"
+                android:layout_width="70dp"
+                android:layout_height="52dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="11dp"
+                android:src="@drawable/acoff" />
+
+            <Switch
+                android:id="@+id/switch_ac1"
+                android:layout_width="298dp"
+                android:layout_height="51dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="18dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="400dp"
+                android:layout_marginEnd="25dp"
+                android:layout_toEndOf="@+id/acButtonP1"
+                android:text="@string/ac_room"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ViewFlipper>
+
+    <ViewFlipper
+        android:id="@+id/viewFlipperFanP1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewFlipperACP1"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:background="@drawable/image_button_shape">
+
+            <ImageView
+                android:id="@+id/fanButtonP1"
+                android:layout_width="73dp"
+                android:layout_height="56dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="12dp"
+                android:src="@drawable/fanoff" />
+
+            <Switch
+                android:id="@+id/switch_fan1"
+                android:layout_width="298dp"
+                android:layout_height="51dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="480dp"
+                android:layout_marginEnd="25dp"
+                android:layout_toEndOf="@+id/fanButtonP1"
+                android:text="@string/fan_room"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ViewFlipper>
+
+
+    <ViewFlipper
+        android:id="@+id/viewFlipperLightP1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewFlipperFanP1"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:background="@drawable/image_button_shape">
+
+            <ImageView
+                android:id="@+id/lightButtonP1"
+                android:layout_width="73dp"
+                android:layout_height="56dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/lightoff" />
+
+            <Switch
+                android:id="@+id/switch_light1"
+                android:layout_width="298dp"
+                android:layout_height="51dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="570dp"
+                android:layout_marginEnd="25dp"
+                android:layout_toEndOf="@+id/lightButtonP1"
+                android:text="@string/light_room"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ViewFlipper>
+
+
+</RelativeLayout>

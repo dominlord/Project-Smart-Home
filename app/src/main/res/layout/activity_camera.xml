@@ -1,0 +1,195 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF0E6"
+    tools:context=".OutDoorActivity">
+
+    <!-- ScrollView chỉ chứa được một child trực tiếp, nên chúng ta đặt một LinearLayout tổng -->
+    <ProgressBar
+        android:id="@+id/progressBarCameraCong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="168dp"
+        android:layout_marginTop="170dp"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <!-- Phần header với nút back và tiêu đề -->
+            <LinearLayout
+                android:id="@+id/linearLayout01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/relative_background_profile"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/backBtnCameraCong"
+                    android:layout_width="51dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/back"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <TextView
+                    android:id="@+id/Textview1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="60dp"
+                    android:padding="10dp"
+                    android:text="@string/camera_ngoai_troi"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- Ảnh lớn ở giữa -->
+            <ImageView
+                android:id="@+id/imageViewCong"
+                android:layout_width="297dp"
+                android:layout_height="231dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/relative_camera_background"
+                android:scaleType="fitCenter" />
+
+
+            <!-- Các nút và điều khiển bên dưới -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginTop="20dp">
+
+                <!-- Cổng chính -->
+                <RelativeLayout
+                    android:id="@+id/relativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="77dp"
+                    android:background="@drawable/image_button_shape"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:id="@+id/doorButtonPK"
+                        android:layout_width="73dp"
+                        android:layout_height="56dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="11dp"
+                        android:src="@drawable/gate" />
+
+                    <Switch
+                        android:id="@+id/switch_gate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@id/doorButtonPK"
+                        android:layout_marginStart="16dp"
+                        android:text="@string/cong_chinh"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <!-- Đèn vườn -->
+                <RelativeLayout
+                    android:id="@+id/relativeLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="77dp"
+                    android:background="@drawable/image_button_shape"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:id="@+id/doorButtonPK1"
+                        android:layout_width="73dp"
+                        android:layout_height="56dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="11dp"
+                        android:src="@drawable/gardengate" />
+
+                    <Switch
+                        android:id="@+id/switch_gardenLight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@id/doorButtonPK1"
+                        android:layout_marginStart="16dp"
+                        android:text="@string/den_vuon"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <!-- Đèn ngoài (chỉ TextView) -->
+                <RelativeLayout
+                    android:id="@+id/relativeLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="77dp"
+                    android:background="@drawable/image_button_shape"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:id="@+id/doorButtonPK2"
+                        android:layout_width="73dp"
+                        android:layout_height="56dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="11dp"
+                        android:src="@drawable/outlight" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/doorButtonPK2"
+                        android:layout_marginStart="16dp"
+                        android:layout_centerVertical="true"
+                        android:text="@string/den_ngoai"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <!-- SeekBar điều khiển ánh sáng ngoài -->
+                <RelativeLayout
+                    android:id="@+id/relativeLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="77dp"
+                    android:background="@drawable/image_button_shape">
+
+                    <SeekBar
+                        android:id="@+id/OutLightSeekBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:max="100"
+                        android:progress="0"
+                        android:thumb="@drawable/custom_thumb" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

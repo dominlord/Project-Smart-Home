@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">Nhà Thông Minh</string>
+    <string name="select_language">Select language</string>
+    <string name="english">English</string>
+    <string name="vietnamese">Vietnamese</string>
+    <string name="edit_info">Edit Infomation</string>
+
+
+
+    <string name="welcome_back">Welcome back</string>
+    <string name="forget_password">Forget your password?</string>
+    <string name="remember_acc">Remember this Account</string>
+    <string name="login_acc">Login</string>
+    <string name="login_demo">Trail login</string>
+    <string name="info">Dont have any account?</string>
+    <string name="sign_in">Sign in</string>
+
+    <string name="hello_demo">Have a good day</string>
+    <string name="login_demo2">Trail login</string>
+    <string name="hello_signin">Have a good day</string>
+    <string name="sign_in2">Sign in</string>
+    <string name="info2">You already have an account?</string>
+    <string name="login">Login</string>
+    <string name="reset">Reset Account</string>
+    <string name="name_sign">Name</string>
+    <string name="phone_number_sign">Phone Number</string>
+    <string name="id_sign">House ID</string>
+
+
+    <string name="city_name">Enter city name</string>
+    <string name="temp_label">Temperature:\n %1$s°C</string>
+    <string name="humidity_label">Humidity:\n %1$s%%</string>
+    <string name="wind_label">Wind speed:\n %1$s m/s</string>
+    <string name="weather_dry">Dry weather</string>
+    <string name="weather_humid">Humid weather</string>
+    <string name="weather_clear">Clear sky</string>
+    <string name="weather_clouds">Cloudy</string>
+    <string name="weather_rain">Rainy</string>
+    <string name="weather_unknown">Unknown weather</string>
+    <string name="weather_night">Night time,\n</string>
+    <string name="weather_day">Day time,\n</string>
+
+    <string name="class_profile">Profile</string>
+    <string name="status_profile">House status:</string>
+    <string name="name_profile">Name:</string>
+    <string name="phone_number_profile">Phone number:</string>
+    <string name="id_house_profile">House ID:</string>
+    <string name="show_status">Unknown</string>
+
+    <string name="class_room">Room</string>
+    <string name="temp_room">Temperature</string>
+    <string name="living_room">Living room</string>
+    <string name="room_number1">Room no.1</string>
+    <string name="room_number2">Room no.2</string>
+
+    <string name="temp_temp">Room temperature</string>
+    <string name="fire_warning">Fire warning: %1$s</string>
+    <string name="fire_danger">Dangerous</string>
+    <string name="fire_normal">Normal</string>
+
+    <string name="living_room_room">Living room</string>
+    <string name="room_no1_room">Room No.1</string>
+    <string name="room_no2_room">Room No.2</string>
+    <string name="door_room">Door</string>
+    <string name="ac_room">AC</string>
+    <string name="fan_room">Fan</string>
+    <string name="light_room">Light</string>
+
+    <string name="class_function">Function</string>
+    <string name="ghi_am">Waiting for response</string>
+    <string name="camera">Camera</string>
+    <string name="quan_ly">Management</string>
+    <string name="camera_ngoai_troi">Outdoor camera</string>
+    <string name="cong_chinh">Main gate</string>
+    <string name="den_vuon">Garden light</string>
+    <string name="den_ngoai">Outdoor light</string>
+    <string name="delete_mode">Mode:</string>
+    <string name="quan_ly_room">Management</string>
+    <string name="delete_mode_on">Delete mode is ON</string>
+    <string name="delete_mode_off">Delete mode is OFF</string>
+    <string name="them_thiet_bi">Add new device</string>
+    <string name="xoa_thiet_bi">Delete device</string>
+
+    <string name="class_support">Support</string>
+    <string name="hen_gio">Device timer</string>
+    <string name="cai_dat">Setting</string>
+    <string name="ve_chung_toi">About us</string>
+    <string name="hen_gio_thiet_bi">Device timer</string>
+    <string name="chon_thoi_gian">Choose time</string>
+    <string name="chon_thiet_bi">Choose device</string>
+    <string name="cai_dat_nn">Language setting</string>
+    <string name="cai_dat_hn">Background setting</string>
+    <string name="nha_phat_trien">Developer feedback</string>
+    <string name="log_out">Log out</string>
+    <string name="reset_room">Reset account</string>
+    <string name="dung_tat_thiet_bi">Stop timer</string>
+    <string name="brightness">brightness</string>
+    <string name="binh_thuong">Fire warning: Normal</string>
+
+
+
+
+
+
+</resources>

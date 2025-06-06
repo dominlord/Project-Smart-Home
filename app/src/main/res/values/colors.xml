@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="lavender">#27AEB9</color>
+    <color name="grey">#d2d2d2</color>
+    <color name="red">#ff0000</color>
+    <color name="little_grey">#D3D3D3</color>
+    <color name="little_blue">#27b4b9</color>
+    <color name="blue">#1b7e82</color>
+    <color name="little_black">#333333</color>
+    <color name="little_lavander">#006064</color>
+    <color name="ice_cream">#FAF0E6</color>
+
+</resources>

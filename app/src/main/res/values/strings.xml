@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">Smart Home</string>
+    <string name="select_language">Chọn ngôn ngữ</string>
+    <string name="english">Tiếng Anh</string>
+    <string name="vietnamese">Tiếng Việt</string>
+
+    <string name="welcome_back">Chào mừng trở lại</string>
+    <string name="forget_password">Quên mật khẩu?</string>
+    <string name="remember_acc">Ghi nhớ tài khoản</string>
+    <string name="login_acc">Đăng nhập</string>
+    <string name="login_demo">Đăng nhập thử nghiệm</string>
+    <string name="info">Bạn chưa có tài khoản?</string>
+    <string name="sign_in">Đăng kí</string>
+
+    <string name="hello_demo">Chúc một ngày tốt lành</string>
+    <string name="login_demo2">Đăng nhập thử nghiệm</string>
+    <string name="hello_signin">Chúc một ngày tốt lành</string>
+    <string name="sign_in2">Đăng kí</string>
+    <string name="info2">Bạn đã có tài khoản?</string>
+    <string name="login">Đăng nhập</string>
+    <string name="reset">Reset tài khoản</string>
+    <string name="name_sign">Họ và tên</string>
+    <string name="phone_number_sign">Số điện thoại</string>
+    <string name="id_sign">Mã số ngôi nhà</string>
+
+    <string name="city_name">Nhập tên thành phố</string>
+    <string name="temp_label">Nhiệt độ:\n %1$s°C</string>
+    <string name="humidity_label">Độ ẩm:\n %1$s%%</string>
+    <string name="wind_label">Tốc độ gió:\n %1$s m/s</string>
+    <string name="weather_dry">Trời khô hanh</string>
+    <string name="weather_humid">Trời ẩm ướt</string>
+    <string name="weather_clear">Trời quang đãng</string>
+    <string name="weather_clouds">Trời nhiều mây</string>
+    <string name="weather_rain">Trời mưa</string>
+    <string name="weather_unknown">Thời tiết không xác định</string>
+    <string name="weather_night">Trời tối,\n</string>
+    <string name="weather_day">Trời sáng,\n</string>
+
+    <string name="class_profile">Trang cá nhân</string>
+    <string name="status_profile">Trạng thái:</string>
+    <string name="name_profile">Họ và tên:</string>
+    <string name="phone_number_profile">Số điện thoại:</string>
+    <string name="id_house_profile">Mã số ngôi nhà:</string>
+    <string name="show_status">Không xác định</string>
+
+    <string name="class_room">Trang phòng</string>
+    <string name="temp_room">Nhiệt độ phòng</string>
+    <string name="living_room">Phòng khách</string>
+    <string name="room_number1">Phòng số 1</string>
+    <string name="room_number2">Phòng số 2</string>
+
+    <string name="temp_temp">Nhiệt độ phòng</string>
+    <string name="fire_warning">Cảnh báo cháy: %1$s</string>
+    <string name="fire_danger">Có nguy hiểm</string>
+    <string name="fire_normal">Bình thường</string>
+
+    <string name="living_room_room">Phòng khách</string>
+    <string name="room_no1_room">Phòng số 1</string>
+    <string name="room_no2_room">Phòng số 2</string>
+    <string name="door_room">Cửa</string>
+    <string name="ac_room">Điều hòa</string>
+    <string name="fan_room">Quạt</string>
+    <string name="light_room">Đèn</string>
+
+    <string name="class_function">Trang chức năng</string>
+    <string name="ghi_am">Đang chờ phản hồi</string>
+    <string name="camera">Camera</string>
+    <string name="quan_ly">Quản lý thiết bị</string>
+    <string name="camera_ngoai_troi">Camera ngoài trời</string>
+    <string name="cong_chinh">Cổng chính</string>
+    <string name="den_vuon">Đèn vườn</string>
+    <string name="den_ngoai">Đèn ngoài</string>
+    <string name="delete_mode">Chế độ:</string>
+    <string name="quan_ly_room">Quản lý thiết bị</string>
+    <string name="delete_mode_on">Chế độ xóa đang bật</string>
+    <string name="delete_mode_off">Chế độ xóa đã tắt</string>
+    <string name="them_thiet_bi">Thêm thiết bị</string>
+    <string name="xoa_thiet_bi">Xóa thiết bị</string>
+
+    <string name="class_support">Trang hỗ trợ</string>
+    <string name="hen_gio">Hẹn giờ thiết bị</string>
+    <string name="cai_dat">Cài đặt</string>
+    <string name="ve_chung_toi">Về chúng tôi</string>
+    <string name="hen_gio_thiet_bi">Hẹn giờ thiết bị</string>
+    <string name="chon_thoi_gian">Chọn thời gian</string>
+    <string name="chon_thiet_bi">Chọn thiết bị</string>
+    <string name="edit_info">Chỉnh sửa thông tin</string>
+    <string name="cai_dat_nn">Cài đặt ngôn ngữ</string>
+    <string name="cai_dat_hn">Cài đặt hình nền</string>
+    <string name="nha_phat_trien">Phản hồi nhà phát triển</string>
+    <string name="log_out">Đăng xuất</string>
+    <string name="reset_room">Trang reset tài khoản</string>
+    <string name="dung_tat_thiet_bi">Dừng bộ đếm</string>
+    <string name="brightness">Độ sáng</string>
+    <string name="binh_thuong">Cảnh báo cháy: Bình thường</string>
+
+
+</resources>

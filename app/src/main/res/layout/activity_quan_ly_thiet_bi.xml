@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FAF0E6"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/relative_background_profile"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/backBtnQuanLy"
+            android:layout_width="51dp"
+            android:layout_height="45dp"
+            android:background="@drawable/back"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/Textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:padding="10dp"
+            android:text="@string/quan_ly_room"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Đây là container bên trong ScrollView -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/relative_background_profile"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/Textview2"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/delete_mode"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/DeleteMode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnCreate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/relative_background_profile"
+                    android:text="@string/them_thiet_bi"
+                    android:textColor="@color/little_black"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/btnDelete"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/relative_background_profile"
+                    android:text="@string/xoa_thiet_bi"
+                    android:textColor="@color/little_black"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@null" />
+            </LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:nestedScrollingEnabled="false" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

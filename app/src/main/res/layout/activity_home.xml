@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/BackgroundWeather"
+    android:scaleType="centerCrop"
+    tools:context=".MainActivity">
+
+
+    <!-- ScrollView chứa phần hiển thị nội dung chính -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomNavigation">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="80dp"
+            android:gravity="center_horizontal">
+
+            <SearchView
+                android:id="@+id/searchViewCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/relative_background_profile"
+                android:iconifiedByDefault="false"
+                android:queryHint="@string/city_name" />
+
+            <!-- Thành phố -->
+            <TextView
+                android:id="@+id/tvCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Hà Nội"
+                android:textColor="@color/white"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+
+
+            <!-- Animation thời tiết -->
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottieWeather"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_marginTop="16dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true" />
+
+            <!-- Layout chứa các thông số -->
+            <LinearLayout
+                android:id="@+id/infoLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <!-- Hàng 1 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:id="@+id/tvWindSpeed"
+                        android:layout_width="163dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/imge_button_shape_weather"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Tốc độ gió"
+                        android:textColor="@color/little_black"
+                        android:textStyle="bold"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvHumidity"
+                        android:layout_width="163dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/imge_button_shape_weather"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Độ ẩm"
+                        android:textColor="@color/little_black"
+                        android:textStyle="bold"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <!-- Hàng 2 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:id="@+id/tvStatus"
+                        android:layout_width="163dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/imge_button_shape_weather"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:textColor="@color/little_black"
+                        android:textStyle="bold"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvTemp"
+                        android:layout_width="163dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/imge_button_shape_weather"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Nhiệt độ"
+                        android:textColor="@color/little_black"
+                        android:textStyle="bold"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_background"
+        android:elevation="8dp"
+        android:layout_marginBottom="1dp"
+        app:itemIconSize="24dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_menu" />
+</RelativeLayout>

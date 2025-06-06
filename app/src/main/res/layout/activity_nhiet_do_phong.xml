@@ -1,0 +1,248 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF0E6"
+    tools:context=".NhietDoPhongActivity">
+
+    <!-- Header bar cố định -->
+    <LinearLayout
+        android:id="@+id/linearLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/relative_background_profile"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/backBtn4"
+            android:layout_width="51dp"
+            android:layout_height="45dp"
+            android:background="@drawable/back"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/Textview1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="65dp"
+            android:padding="10dp"
+            android:text="@string/temp_temp"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- Scrollable content -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linearLayout01"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- RelativeLayout 1: Humidity -->
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="77dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/image_button_shape">
+
+                <ImageView
+                    android:id="@+id/humi"
+                    android:layout_width="80dp"
+                    android:layout_height="58dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/humidity" />
+
+                <TextView
+                    android:id="@+id/HumiText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/humi"
+                    android:layout_marginStart="10dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/little_black"
+                    android:text=""
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ProgressBar
+                    android:id="@+id/progressBarHumi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:indeterminate="true"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <!-- RelativeLayout 2: Fire Warning -->
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="77dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/image_button_shape">
+
+                <ImageView
+                    android:id="@+id/firewarning"
+                    android:layout_width="81dp"
+                    android:layout_height="54dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/firewarning" />
+
+                <TextView
+                    android:id="@+id/FireText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/firewarning"
+                    android:layout_marginStart="10dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/little_black"
+                    android:text=""
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ProgressBar
+                    android:id="@+id/progressBarFireWarning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:indeterminate="true"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <!-- RelativeLayout 3: Temperature -->
+            <RelativeLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="77dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/image_button_shape">
+
+                <ImageView
+                    android:id="@+id/temp"
+                    android:layout_width="83dp"
+                    android:layout_height="59dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/temperature" />
+
+                <TextView
+                    android:id="@+id/TempText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/temp"
+                    android:layout_marginStart="10dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/little_black"
+                    android:text=""
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ProgressBar
+                    android:id="@+id/progressBarTemp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:indeterminate="true"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <!-- RelativeLayout 4: Rain -->
+            <RelativeLayout
+                android:id="@+id/relativeLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="77dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/image_button_shape">
+
+                <ImageView
+                    android:id="@+id/rain"
+                    android:layout_width="83dp"
+                    android:layout_height="59dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/rain" />
+
+                <TextView
+                    android:id="@+id/RainText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/rain"
+                    android:layout_marginStart="10dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/little_black"
+                    android:text=""
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ProgressBar
+                    android:id="@+id/progressBarRain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:indeterminate="true"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <!-- RelativeLayout 5: Brightness -->
+            <RelativeLayout
+                android:id="@+id/relativeLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="77dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/image_button_shape">
+
+                <ImageView
+                    android:id="@+id/Brightness"
+                    android:layout_width="83dp"
+                    android:layout_height="59dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/brightness" />
+
+                <TextView
+                    android:id="@+id/BrightnessText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/Brightness"
+                    android:layout_marginStart="10dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/little_black"
+                    android:text=""
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ProgressBar
+                    android:id="@+id/progressBarBrightness"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:indeterminate="true"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
